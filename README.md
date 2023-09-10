@@ -1,3 +1,20 @@
+### Features
+
+-   HEADER
+-   BODY
+    -   SIDE BAR
+        -   MENU ITEMS
+    -   MAIN CONTAINER
+        -   BUTTON LIST
+        -   VIDEO CONTAINER
+            -   VIDEO CARD
+
+### Namaste Youtube
+
+-   Create React App
+-   Configured TailwindCSS
+-   Header (with cool icons)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
