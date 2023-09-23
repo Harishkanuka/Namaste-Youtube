@@ -9,6 +9,7 @@ import {
     YOUR_VIDEOS_ICON,
 } from "../utils/constants";
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
     const isMenuOpen = useSelector((store) => store.app.isMenuOpen);
@@ -17,15 +18,19 @@ const Sidebar = () => {
     return (
         <div className="pl-5 pt-3 shadow-lg w-48  ">
             <ul>
-                <li className="flex">
-                    <img
-                        className="mx-2"
-                        src={HOME_ICON}
-                        alt="HomeIcon"
-                    />
-                    Home
+                <li className="px-2  py-2 items-center  hover:bg-gray-300  w-full rounded-lg cursor-pointer">
+                    <Link
+                        to="/"
+                        className="flex">
+                        <img
+                            className="mx-2"
+                            src={HOME_ICON}
+                            alt="HomeIcon"
+                        />
+                        Home
+                    </Link>
                 </li>
-                <li className="flex py-2">
+                <li className="px-2 flex py-2 items-center  hover:bg-gray-300  w-full rounded-lg cursor-pointer">
                     <img
                         className="mx-2"
                         src={SHORTS_ICON}
@@ -33,7 +38,7 @@ const Sidebar = () => {
                     />
                     Shorts
                 </li>
-                <li className="flex py-2">
+                <li className="px-2 flex py-2 items-center  hover:bg-gray-300  w-full rounded-lg cursor-pointer">
                     <img
                         className="mx-2"
                         src={SUBSCRIPTIONS_ICON}
@@ -42,9 +47,9 @@ const Sidebar = () => {
                     Subscriptions
                 </li>
             </ul>
-            <div className="mt-4 ">
+            <div>
                 <ul>
-                    <li className="flex">
+                    <li className="px-2 flex py-2 items-center  hover:bg-gray-300  w-full rounded-lg cursor-pointer">
                         <img
                             className="mx-2"
                             src={LIBRARY_ICON}
@@ -52,7 +57,7 @@ const Sidebar = () => {
                         />
                         Library
                     </li>
-                    <li className="flex py-2">
+                    <li className="px-2 flex py-2 items-center  hover:bg-gray-300  w-full rounded-lg cursor-pointerflex py-2">
                         <img
                             className="mx-2"
                             src={HISTORY_ICON}
@@ -60,7 +65,7 @@ const Sidebar = () => {
                         />
                         History
                     </li>
-                    <li className="flex py-2">
+                    <li className="px-2 flex py-2 items-center  hover:bg-gray-300  w-full rounded-lg cursor-pointer">
                         <img
                             className="mx-2"
                             src={YOUR_VIDEOS_ICON}
@@ -68,7 +73,7 @@ const Sidebar = () => {
                         />
                         Your Videos
                     </li>
-                    <li className="flex py-2">
+                    <li className="px-2 flex py-2 items-center  hover:bg-gray-300  w-full rounded-lg cursor-pointer">
                         <img
                             className="mx-2"
                             src={LIKED_VIDEOS}
@@ -80,10 +85,18 @@ const Sidebar = () => {
             </div>
             <h1 className="font-bold pt-3">Subscriptions</h1>
             <ul>
-                <li>Music</li>
-                <li>Sports</li>
-                <li>Gaming</li>
-                <li>Movies</li>
+                <li className="px-2 flex py-2 items-center  hover:bg-gray-300  w-full rounded-lg cursor-pointer">
+                    Music
+                </li>
+                <li className="px-2 flex py-2 items-center  hover:bg-gray-300  w-full rounded-lg cursor-pointer">
+                    Sports
+                </li>
+                <li className="px-2 flex py-2 items-center  hover:bg-gray-300  w-full rounded-lg cursor-pointer">
+                    Gaming
+                </li>
+                <li className="px-2 flex py-2 items-center  hover:bg-gray-300  w-full rounded-lg cursor-pointer">
+                    Movies
+                </li>
             </ul>
         </div>
     );

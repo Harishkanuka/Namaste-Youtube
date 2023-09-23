@@ -17,3 +17,7 @@
 -   Installed React ToolKit && React Redux
 -   Created Store && Slice
 -   Provided (Provider) our store to App
+-   created side bar
+-   toggled side bar using Redux store by subscribing to it
+-   Fetch Videos Data From Youtube APIS
+-
