@@ -8,13 +8,20 @@ import {
     USER_AVATAR,
     YOUTUBE_LOGO,
 } from "../utils/constants";
+import { useDispatch } from "react-redux";
+import { toggleMenu } from "../utils/appSlice";
 
 const Header = () => {
+    const dispatch = useDispatch();
+    const toggleMenuHandler = () => {
+        dispatch(toggleMenu());
+    };
     return (
         <div className="grid grid-flow-col p-2 shadow-lg items-center">
             <div className="flex col-span-1 items-center">
                 <img
-                    className="w-11 h-20"
+                    onClick={() => toggleMenuHandler()}
+                    className="w-11 h-20 cursor-pointer"
                     src={HAMBURGER_MENU}
                     alt="Menu Icon"
                 />
