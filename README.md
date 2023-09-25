@@ -20,4 +20,9 @@
 -   created side bar
 -   toggled side bar using Redux store by subscribing to it
 -   Fetch Videos Data From Youtube APIS
--
+-   Installed React Router DOM
+-   Provided Router for our App
+-   Created Search WatchPage
+-   By using UseSearchParam provided video id to Search the Video
+-   Fetch API for Youtube Search Suggestions
+-   Implemented Debouncing Feature with 200ms time
