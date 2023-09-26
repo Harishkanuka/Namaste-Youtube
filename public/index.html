@@ -1,21 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
+    <head>
+        <meta charset="utf-8" />
+        <link
+            rel="icon"
+            href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZm9jdXNhYmxlPSJmYWxzZSIgc3R5bGU9InBvaW50ZXItZXZlbnRzOiBub25lOyBkaXNwbGF5OiBibG9jazsgd2lkdGg6IDEwMCU7IGhlaWdodDogMTAwJTsiPgogIDxkZWZzPgogICAgPHJhZGlhbEdyYWRpZW50IGN4PSI1LjQlIiBjeT0iNy4xMSUiIHI9IjEwNy45MyUiIGZ4PSI1LjQlIiBmeT0iNy4xMSUiIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoLjcwNjUzIDAgMCAxIC4wMTYgMCkiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjRkZGIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI0ZGRiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8L3JhZGlhbEdyYWRpZW50PgogIDwvZGVmcz4KICA8ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgPHBhdGggZD0iTTEgMWgyMS43N3YyMkgxeiIvPgogICAgPGcgZmlsbC1ydWxlPSJub256ZXJvIj4KICAgICAgPHBhdGggZmlsbD0iI0YwMCIgZD0iTTIyLjU0IDcuNnMtLjItMS41LS44Ni0yLjE3Yy0uODMtLjg3LTEuNzUtLjg4LTIuMTgtLjkzLTMuMDQtLjIyLTcuNi0uMi03LjYtLjJzLTQuNTYtLjAyLTcuNi4yYy0uNDMuMDUtMS4zNS4wNi0yLjE4LjkzLS42NS42Ny0uODYgMi4xOC0uODYgMi4xOFMxLjA0IDkuNCAxIDExLjE4djEuNjZjLjA0IDEuNzguMjYgMy41NS4yNiAzLjU1cy4yIDEuNS44NiAyLjE4Yy44My44NyAxLjkuODQgMi40Ljk0IDEuNy4xNSA3LjIuMiA3LjM4LjIgMCAwIDQuNTcgMCA3LjYtLjIyLjQzLS4wNSAxLjM1LS4wNiAyLjE4LS45My42NS0uNjcuODYtMi4xOC44Ni0yLjE4cy4yMi0xLjc3LjI0LTMuNTV2LTEuNjZjLS4wMi0xLjc4LS4yNC0zLjU1LS4yNC0zLjU1eiIvPgogICAgICA8cGF0aCBmaWxsPSIjRkFGQUZBIiBkPSJNOS42OCA4Ljl2Ni4xOGw1Ljg0LTMuMSIvPgogICAgICA8cGF0aCBmaWxsPSIjMDAwIiBmaWxsLW9wYWNpdHk9Ii4xMiIgZD0iTTkuNjggOC44OGw1LjEzIDMuNDguNzMtLjM4Ii8+CiAgICAgIDxwYXRoIGZpbGw9IiNGRkYiIGZpbGwtb3BhY2l0eT0iLjIiIGQ9Ik0yMi41NCA3LjZzLS4yLTEuNS0uODYtMi4xN2MtLjgzLS44Ny0xLjc1LS44OC0yLjE4LS45My0zLjA0LS4yMi03LjYtLjItNy42LS4ycy00LjU2LS4wMi03LjYuMmMtLjQzLjA1LTEuMzUuMDYtMi4xOC45My0uNjUuNjctLjg2IDIuMTgtLjg2IDIuMThTMS4wNCA5LjQgMSAxMS4xOHYuMWMuMDQtMS43Ni4yNi0zLjU0LjI2LTMuNTRzLjItMS41Ljg2LTIuMTdjLjgzLS44OCAxLjc1LS44OCAyLjE4LS45MyAzLjA0LS4yMiA3LjYtLjIgNy42LS4yczQuNTYtLjAyIDcuNi4yYy40My4wNSAxLjM1LjA1IDIuMTguOTMuNjUuNjYuODYgMi4xNy44NiAyLjE3cy4yMiAxLjc4LjIzIDMuNTV2LS4xYzAtMS44LS4yMy0zLjU2LS4yMy0zLjU2eiIvPgogICAgICA8cGF0aCBmaWxsPSIjM0UyNzIzIiBmaWxsLW9wYWNpdHk9Ii4yIiBkPSJNMjIuNTQgMTYuNHMtLjIgMS41LS44NiAyLjE3Yy0uODMuODctMS43NS44OC0yLjE4LjkzLTMuMDQuMjItNy42LjItNy42LjJzLTQuNTYuMDItNy42LS4yYy0uNDMtLjA1LTEuMzUtLjA2LTIuMTgtLjkzLS42NS0uNjctLjg2LTIuMTgtLjg2LTIuMThzLS4yMi0xLjgtLjI2LTMuNTd2LS4xYy4wNCAxLjc2LjI2IDMuNTQuMjYgMy41NHMuMiAxLjUuODYgMi4xN2MuODMuODggMS43NS44OCAyLjE4LjkzIDMuMDQuMjIgNy42LjIgNy42LjJzNC41Ni4wMiA3LjYtLjJjLjQzLS4wNSAxLjM1LS4wNSAyLjE4LS45My42NS0uNjYuODYtMi4xNy44Ni0yLjE3cy4yMi0xLjc4LjIzLTMuNTV2LjFjMCAxLjgtLjIzIDMuNTYtLjIzIDMuNTZ6Ii8+CiAgICAgIDxwYXRoIGZpbGw9IiNGRkYiIGZpbGwtb3BhY2l0eT0iLjIiIGQ9Ik05LjY4IDE1LjA4di4xbDUuODQtMy4wOHYtLjEyIi8+CiAgICAgIDxwYXRoIGZpbGw9IiMzRTI3MjMiIGZpbGwtb3BhY2l0eT0iLjIiIGQ9Ik05LjY4IDguOXYtLjEzbDUuODQgMy4xdi4xIi8+CiAgICAgIDxwYXRoIGZpbGw9InVybCgjeW91dHViZV9yb3VuZF9fYSkiIGZpbGwtb3BhY2l0eT0iLjEiIGQ9Ik0yMS41NCAzLjRzLS4yLTEuNS0uODYtMi4xOEMxOS44NS4zNSAxOC45My4zNSAxOC41LjMgMTUuNDYuMDcgMTAuOS4xIDEwLjkuMVM2LjM0LjA3IDMuMy4zYy0uNDMuMDUtMS4zNS4wNS0yLjE4LjkyQy40NyAxLjkuMjYgMy40LjI2IDMuNFMuMDQgNS4xNyAwIDYuOTVWOC42Yy4wNCAxLjguMjYgMy41Ni4yNiAzLjU2cy4yIDEuNTIuODYgMi4xOGMuODMuODcgMS45Ljg1IDIuNC45NCAxLjcuMTYgNy4yLjIgNy4zOC4yIDAgMCA0LjU3IDAgNy42LS4yLjQzLS4wNiAxLjM1LS4wNyAyLjE4LS45NC42NS0uNjYuODYtMi4xOC44Ni0yLjE4cy4yMi0xLjc3LjI0LTMuNTVWNi45N2MtLjAyLTEuNzgtLjI0LTMuNTUtLjI0LTMuNTV6IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxIDQuMjA4KSIvPgogICAgPC9nPgogIDwvZz4KPC9zdmc+" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1" />
+        <meta
+            name="theme-color"
+            content="#000000" />
+        <meta
+            name="description"
+            content="Web site created using create-react-app" />
+        <link
+            rel="apple-touch-icon"
+            href="%PUBLIC_URL%/logo192.png" />
+        <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
+        <link
+            rel="manifest"
+            href="%PUBLIC_URL%/manifest.json" />
+        <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
@@ -24,12 +33,12 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
+        <title>WatchWonders</title>
+    </head>
+    <body>
+        <noscript>You need to enable JavaScript to run this app.</noscript>
+        <div id="root"></div>
+        <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
 
@@ -38,6 +47,5 @@
 
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+    --></body>
 </html>

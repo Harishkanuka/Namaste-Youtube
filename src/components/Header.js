@@ -42,7 +42,6 @@ const Header = () => {
     }, [searchQuery]);
     // Make an API Call
     const getSearchSuggestions = async () => {
-        console.log("API CALL - " + searchQuery);
         const data = await fetch(YOUTUBE_SEARCH_API + searchQuery);
         const json = await data.json();
         setSuggestions(json[1]);
@@ -59,11 +58,11 @@ const Header = () => {
     };
 
     return (
-        <div className="grid grid-flow-col p-2 shadow-lg items-center">
-            <div className="flex col-span-1 items-center">
+        <div className="grid grid-flow-col p-2 shadow-lg items-center ">
+            <div className="flex col-span-1 items-center ">
                 <img
                     onClick={() => toggleMenuHandler()}
-                    className="w-11 h-20 cursor-pointer"
+                    className=" w-11  h-20 cursor-pointer mx-2"
                     src={HAMBURGER_MENU}
                     alt="Menu Icon"
                 />

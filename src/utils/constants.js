@@ -1,5 +1,4 @@
 // API Key URL's
-// const GOOGLE_API_KEY = "AIzaSyBgv6Y_0JCFnz7fYXjm8d5768Ue2KffKt0";
 export const YOUTUBE_VIDEOS_API =
     "https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=50&regionCode=IN&key=" +
     process.env.REACT_APP_GOOGLE_API_KEY;
@@ -8,6 +7,8 @@ export const YOUTUBE_VIDEOS_API =
 export const YOUTUBE_SEARCH_API =
     "http://suggestqueries.google.com/complete/search?client=firefox&ds=yt&q=";
 
+//LIVE_CHAT_COUNT
+export const LIVE_CHAT_COUNT = 30;
 // IMAGES URL
 export const HAMBURGER_MENU =
     "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0IiBmb2N1c2FibGU9ImZhbHNlIiBzdHlsZT0icG9pbnRlci1ldmVudHM6IG5vbmU7IGRpc3BsYXk6IGJsb2NrOyB3aWR0aDogMTAwJTsgaGVpZ2h0OiAxMDAlOyI+PHBhdGggZD0iTTIxIDZIM1Y1aDE4djF6bTAgNUgzdjFoMTh2LTF6bTAgNkgzdjFoMTh2LTF6Ii8+PC9zdmc+";

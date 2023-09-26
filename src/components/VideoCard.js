@@ -1,7 +1,7 @@
 import React from "react";
+import { USER_AVATAR } from "../utils/constants";
 
 const VideoCard = ({ info }) => {
-    // console.log(info);
     const { snippet, statistics } = info;
     const { channelTitle, title, thumbnails } = snippet;
     return (
@@ -16,11 +16,16 @@ const VideoCard = ({ info }) => {
                     <li className="font-bold py-2 text-gray text-ellipsis overflow-hidden">
                         {title}
                     </li>
-                    <li className="font-bold text-gray text-ellipsis overflow-hidden">
+                    <li className="text-slate-800 flex items-center">
+                        <img
+                            className="h-8 w-5 mx-1"
+                            src={USER_AVATAR}
+                            alt="User Avatar"
+                        />
                         {channelTitle}
                     </li>
-                    <li className="font-bold  text-gray text-ellipsis overflow-hidden">
-                        {statistics?.viewCount}
+                    <li className="text-gray-600 ">
+                        {statistics?.viewCount} Views
                     </li>
                 </ul>
             </div>

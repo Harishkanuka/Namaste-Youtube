@@ -29,3 +29,6 @@
 -   Implemented Cache feature using Redux store
 -   optimized API calls through Cache
 -   Implemented N level nested Comments Feature
+-   Implemented Live Chat feature which use API polling mechanism
+-   Its a Well optimized Live Chat because When new chat comes in it deletes existing an existing chat after certain period of time.
+-
